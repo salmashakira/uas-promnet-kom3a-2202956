@@ -1,0 +1,165 @@
+.navbar {
+  background-color: #0b8457;
+  /* navbar-dark bg-primary */
+}
+
+.navbar-brand {
+  font-weight: bold; /* Untuk membuat teks menjadi non-bold */
+  padding: 15px; /* Sesuaikan dengan nilai yang diinginkan */
+  color: #000; /* Warna abu-abu */
+}
+
+.navbar-brand,
+.navbar-brand:visited,
+.navbar-brand:hover,
+.navbar-brand:active {
+  color: white; /* Warna teks default */
+  transition: color 0.3s; /* Efek transisi perubahan warna */
+}
+
+.navbar-brand:hover,
+.navbar-brand:active {
+  color: rgb(148, 255, 171); /* Warna merah saat dihover atau di-klik */
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #ffffff;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(34, 34, 34);
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 45px 0; /* Sesuaikan dengan kebutuhan Anda */
+  z-index: 999; /* Menentukan lapisan di atas konten lain */
+}
+
+div.row {
+  max-height: calc(400vh - 100px); /* Ukuran maksimum konten agar dapat discroll */
+  overflow-y: auto; /* Menampilkan scroll saat konten lebih panjang dari tinggi layar */
+}
+
+div.user-list {
+  padding-bottom: 200px; /* Sesuaikan nilai dengan tinggi footer */
+}
+
+.content {
+  padding-top: 60px; /* Sesuaikan dengan tinggi navbar */
+}
+
+.text-center {
+  padding-top: 10px;
+  font-size: 40px; /* Ubah ukuran teks */
+  font-weight: bold; /* Teks menjadi bold */
+}
+
+
+.row {
+  padding-bottom: 50px;
+}
+
+.row2 {
+  padding-bottom: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
+}
+
+.roww {
+  padding-bottom: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+.number-selector {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 120px;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Menambahkan shadow */
+}
+
+.decrement,
+.increment {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #0b8457; /* Mengatur warna background menjadi putih */
+}
+
+.decrement:focus,
+.increment:focus {
+  outline: none; /* Menghapus focus outline saat tombol di klik */
+}
+
+.decrement:active,
+.increment:active {
+  background-color: #e0e0e0; /* Mengubah warna background saat tombol ditekan */
+}
+
+.gender-radio {
+  display: flex;
+}
+
+.gender-radio label {
+  margin-right: 20px;
+}
+
+.gender-radio input[type="radio"] {
+  margin-right: 5px;
+}
+
+.btn {
+  margin-top: 10px;
+}
